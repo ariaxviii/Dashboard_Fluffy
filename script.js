@@ -64,7 +64,7 @@ function showData() {
       index +
       ')" class="btn btn-danger">Borrar</button><button onclick="UpdateData(' +
       index +
-      ')" class ="btn btn warning m-2">Editar</button></td>';
+      ')" class ="btn btn-warning">Editar</button></td>';
     html += "</tr>";
   });
   document.querySelector("#crudTable tbody").innerHTML = html;
