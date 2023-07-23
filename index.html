@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- -------------------------------- cdns --------------------------------- -->
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------------------------------- fonts -------------------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------------- css --------------------------------- -->
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="./components/search-bar/styles.css">
+  <link rel="stylesheet" href="./components/side-bar-menu/styles.css">
+  <link rel="stylesheet" href="./components/header-btns/styles.css">
+  <link rel="stylesheet" href="./components/slider-home/styles .css">
+  <link rel="stylesheet" href="./components/section_brands/styles.css">
+
+  <link rel="stylesheet" href="./components/product-card/styles.css">
+  <link rel="stylesheet" href="./components/product-card/styles.css">
+  <link rel="icon" type="image/x-icon" href="./img/Imagotipo.png" />
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------------- Table css --------------------------------- -->
+  <link rel="stylesheet" href="table.css">
+
+
+
+  <title>DashboardFluffy</title>
+</head>
+
+<body class='body__container'>
+  <header class='heder-container'>
+
+    <!-- -------------------------- barra de busqueda -------------------------- -->
+    <div class="main--searcher">
+      <div class="main-searcher__input-container search-container">
+        <p class='main--searcher__ico'>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </p>
+        <input type="text" id="search-input" placeholder=" Categoría ">
+        <ul id="suggestions-list"></ul>        
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------ iconos  carrito user ------------------------- -->
+    <section class='header__btns'>
+      <div class='heder__container-btns'>
+        <a href="" class='header_btn_shoppin-cart'>
+          <i class="far fa-calendar"></i>
+
+        </a>
+        <a href="" class='header_btn_fav'>
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="" class='header_btn_alerts'>
+          <i class="fa-regular fa-bell"></i>
+        </a>
+
+      </div>
+
+
+
+    </section>
+    <!-- fin Iconos ----------------------------------------------------------------------- -->
+    <div class="">
+      
+      <a href='' class='header__btn-user' style="color: #d6b087">
+        <p></p>
+        <i class="fas fa-user-check"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- -------------------------------- menu ----------------------------------->
+  <aside class='menu-container'>
+    <nav class='menu__nav'>
+      <figure class=' menu__img-container'>
+        <img class='menu__img-icon' src="https://images.freeimages.com/fic/images/icons/316/hyperion/512/3d_user.png?ref=findicons" alt="Logo fluffy perrito" />
+      </figure>
+      <div class='menu__options-container'>
+
+
+        <a href=''  class="menu__item-text active">
+          <h3>
+            <i class="fas fa-bone"></i>
+            <span>Productos</span>
+          </h3>
+        </a>
+
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="far fa-star"></i>
+            <span class="nav-item">Clientes</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-user-friends"></i>
+            <span class="nav-item">Empleados</span>
+          </h3>
+        </a>
+
+        <a  href='' id='menu__products' class="menu__item-text">
+          <h3>
+            <i class="fab fa-opencart"></i>
+            <span class="nav-item">Compras</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-briefcase-medical"></i>
+            <span class="nav-item">Servicios</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-paw"></i>
+            <span class="nav-item">Mascotas</span>
+          </h3>
+        </a>             
+
+    </nav>
+  </aside>
+  <!-- fin menu ----------------------------------------------------------------------- -->
+
+  <main class='main-container'>
+
+    <!-- inicio---------------------------- Agregar Productos----------------------------- -->
+    <section class='slider_container'>
+      
+      <div class="brands__title">
+        <h2>Agregar Productos</h2>
+      </div>
+
+      
+        <form class="contedor-formulario">
+          <div class="container-brands">
+          <div>
+            <label for="id_producto" class="form-label">Id del Producto</label>
+            <input type="number" class="form-control" id="id_producto" placeholder="id_producto" name="id_producto"/>
+          </div>
+          <div>
+            <label for="nombre_producto" class="form-label">Nombre del Producto</label>
+            <input type="text" class="form-control" id="nombre_producto" placeholder="nombre_producto" name="nombre_producto"/>
+          </div>
+          <div>
+            <label for="referencia" class="form-label">Referencia</label>
+            <input type="text" class="form-control" id="referencia" placeholder="referencia" name="referencia"/>
+          </div>
+          <div>
+            <label for="unidades_disponibles" class="form-label">Unidades disponibles</label>
+            <input type="number" class="form-control" id="unidades_disponibles" placeholder="unidades_disponibles" name="unidades_disponibles"/>
+          </div>
+          <div>
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="precio" placeholder="precio" name="precio"/>
+          </div>
+          <div>
+            <label for="fecha_compra" class="form-label">Fecha de Compra</label>
+            <input type="date" class="form-control" id="fecha_compra" placeholder="fecha_compra" name="fecha_compra"/>
+          </div>
+          <div>
+            <label for="marca" class="form-label">Marca</label>
+            <input type="text" class="form-control" id="marca" placeholder="marca" name="marca"/>
+          </div>
+          <div>
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="descripcion" name="descripcion"/>
+          </div>
+          <div>
+            <label for="beneficios" class="form-label">Beneficios</label>
+            <input type="text" class="form-control" id="beneficios" placeholder="beneficios" name="beneficios"/>
+          </div>
+          <div>
+            <label for="caracteristicas" class="form-label">Características</label>
+            <input type="text" class="form-control" id="caracteristicas" placeholder="caracteristicas" name="caracteristicas"/>
+          </div>          
+          <div>
+            <label for="precio_compra" class="form-label">Precio de compra</label>
+            <input type="number" class="form-control" id="precio_compra" placeholder="precio_compra" name="precio_compra"/>
+          </div>
+          <div>
+            <label for="precio_venta" class="form-label">Precio de venta</label>
+            <input type="number" class="form-control" id="precio_venta" placeholder="precio_venta" name="precio_venta"/>
+          </div>  
+          <!--<div>
+            <label for="foto" class="form-label">Foto</label>
+            <input type="file" class="form-control" id="foto" placeholder="foto" name="foto"/>
+          </div> -->        
+           
+          <div>
+            <label for="categoria_idcategoria" class="form-label">Id Categoría</label>
+            <input type="number" class="form-control" id="categoria_idcategoria" placeholder="categoria_idcategoria" name="categoria_idcategoria"/>
+          </div>
+          <div>
+            <label for="especie_idespecie" class="form-label">Id Especie</label>
+            <input type="number" class="form-control" id="especie_idespecie" placeholder="especie_idespecie" name="especie_idespecie"/>
+          </div>
+          <div>
+            <button id="Submit" class="button-formulario" onclick="AddData()">
+              Agregar Producto           
+            </button>
+            <button class="btn btn-primary" id="Update">
+              Actualizar
+            </button>
+           </div>           
+        </div>
+        </form>
+  </section>
+  <!-- Agregar Productos ----------------------------------------------------------------------- -->
+
+    <!-- inicio---------------------------- Listado de Productos ----------------------------- -->
+    <section class='brands'>
+
+      <div class="brands__title">
+        <h2>Listado de Productos</h2>
+      </div>
+
+      <div class="container-brands">
+        <table id="crudTable">
+          <thead>
+            <tr>
+              <th>Id Producto</th>
+              <th>Nombre del Producto</th>
+              <th>Referencia</th>
+              <th>Unidades disponibles</th>
+              <th>Precio</th>
+              <th>Fecha de Compra</th>
+              <th>Marca</th>
+              <th>Descripción</th>
+              <th>Beneficios</th>
+              <th>Características</th>
+              <th>Precio de compra</th>
+              <th>Precio de venta</th>
+              <!--<th>Foto</th> -->                        
+              <th>Id Categoría</th>
+              <th>Id Especie</th>
+              <th id="deleteEdit">Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Listado de Productos----------------------------------------------------------------------- -->
+    
+  </main>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
